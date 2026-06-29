@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trazy's Academy</title>
-  <meta name="description" content="Expert coaching, cycle design, bloodwork analysis, structural assessment, and the truth behind bone formation for peak human performance.">
+  <meta name="description" content="Expert coaching, cycle design, structural assessment, and the truth behind bone formation for peak human performance.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
@@ -48,7 +48,7 @@
     .brand-font { font-family: 'Space Grotesk', sans-serif; }
     .serif-display { font-family: 'Playfair Display', serif; }
 
-    /* NAV */
+
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(13,13,13,0.85);
@@ -101,7 +101,7 @@
     }
     .btn-discord:hover { background: var(--discord-dark); transform: translateY(-1px); }
 
-    /* HERO */
+
     .hero {
       min-height: 100dvh;
       display: flex; align-items: center;
@@ -197,7 +197,6 @@
     .hero-pill { display: flex; align-items: center; gap: 7px; }
     .hero-pill i { color: var(--gold); font-size: 12px; }
 
-    /* TRUST BAR */
     .trust-bar {
       border-bottom: 1px solid var(--border);
       padding: 18px 0;
@@ -213,7 +212,7 @@
     .trust-stat { font-size: 13px; color: var(--text-muted); }
     .trust-stat strong { color: var(--text-primary); font-weight: 600; }
 
-    /* SECTIONS */
+ 
     .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 
     .section-label-text {
@@ -235,7 +234,7 @@
       letter-spacing: -0.03em;
     }
 
-    /* SERVICES */
+
     #services { padding: 100px 0 80px; }
 
     .services-header {
@@ -286,7 +285,7 @@
     .card-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-dim); }
     .card-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-top: 7px; flex-shrink: 0; }
 
-    /* PROCESS */
+  
     #process { padding: 100px 0; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
     .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-top: 3rem; }
@@ -304,9 +303,7 @@
     .process-title { font-size: 17px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
     .process-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
-    /* ========================== */
-    /* TRAZYEE GUIDE SECTION      */
-    /* ========================== */
+
     #trazyee-guide {
       padding: 100px 0;
       border-bottom: 1px solid var(--border);
@@ -324,7 +321,7 @@
     }
 
     .guide-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(2.4rem, 7vw, 5.5rem);
       line-height: 0.95; letter-spacing: -0.035em;
       margin-bottom: 2rem;
@@ -339,27 +336,17 @@
       position: relative; display: inline-flex;
       align-items: center; justify-content: center; gap: 12px;
       background: var(--text-primary); color: var(--surface);
-      padding: 16px 32px; font-family: monospace;
+      padding: 16px 32px; font-family: 'Space Grotesk', sans-serif;
       font-size: 11px; text-transform: uppercase;
-      letter-spacing: 0.2em; font-weight: 600;
+      letter-spacing: 0.2em; font-weight: 700;
       border: none; cursor: pointer; transition: all .2s;
     }
     .btn-guide-primary:hover { background: rgba(240,240,240,0.85); }
-    
-    .btn-guide-sticker {
-      position: absolute; top: -8px; right: -8px;
-      background: var(--surface); color: var(--text-primary);
-      border: 1px solid var(--text-primary);
-      padding: 2px 8px; font-family: monospace;
-      font-size: 9px; letter-spacing: 0.2em; font-weight: 700;
-      transform: rotate(3deg); box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-      z-index: 10;
-    }
 
     .btn-guide-disabled {
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       border: 1px solid var(--border); color: var(--text-muted);
-      padding: 16px 32px; font-family: monospace;
+      padding: 16px 32px; font-family: 'Space Grotesk', sans-serif;
       font-size: 11px; text-transform: uppercase;
       letter-spacing: 0.2em; opacity: 0.7; cursor: not-allowed;
       background: transparent;
@@ -372,14 +359,14 @@
 
     .guide-features {
       display: flex; flex-wrap: wrap; gap: 1.5rem;
-      font-family: monospace; font-size: 10px;
+      font-family: 'Space Grotesk', sans-serif; font-size: 10px;
       text-transform: uppercase; letter-spacing: 0.15em;
       color: var(--text-muted);
     }
     .guide-feature { display: flex; align-items: center; gap: 6px; }
     .guide-feature i { color: var(--text-primary); font-size: 12px; }
 
-    /* Comparison Slider */
+
     .comparison-wrapper {
       position: relative; width: 100%; max-width: 450px;
       aspect-ratio: 3/4; overflow: hidden;
@@ -418,41 +405,14 @@
     .comp-label {
       position: absolute; top: 16px;
       padding: 4px 8px; background: rgba(13,13,13,0.8);
-      font-family: monospace; font-size: 10px;
+      font-family: 'Space Grotesk', sans-serif; font-size: 10px;
       text-transform: uppercase; letter-spacing: 0.15em;
       z-index: 20;
     }
     .comp-label.left { left: 16px; }
     .comp-label.right { right: 16px; }
 
-    /* BLOODWORK */
-    #bloodwork { padding: 100px 0; border-bottom: 1px solid var(--border); }
-
-    .bw-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 4rem; align-items: start; }
-
-    .bw-panel {
-      background: var(--surface-2); border: 1px solid var(--border);
-      border-radius: 20px; padding: 2.5rem;
-    }
-
-    .bw-panel-label { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; }
-
-    .bw-row {
-      display: grid; grid-template-columns: 3fr 4fr 3fr;
-      gap: 1rem; padding: 1.25rem 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 13px; align-items: start;
-    }
-    .bw-row:last-child { border-bottom: none; }
-    .bw-row-name { font-weight: 500; color: var(--text-primary); }
-    .bw-row-markers { color: var(--text-muted); }
-    .bw-row-range { color: var(--gold); font-weight: 500; font-size: 12px; text-align: right; }
-
-    .bw-footnote { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-muted); line-height: 1.5; }
-
-    /* ========================== */
-    /* THE ACADEMY SECTION        */
-    /* ========================== */
+  
     #academy {
       padding: 120px 0 100px;
       background: var(--surface);
@@ -492,7 +452,7 @@
     }
     .academy-badge i { font-size: 10px; }
 
-    /* Curriculum Grid */
+
     .curriculum-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; background: var(--border);
@@ -562,7 +522,7 @@
     .curriculum-topics li i.cyan { color: var(--accent-cyan); }
     .curriculum-topics li i.gold { color: var(--gold); }
 
-    /* Academy Features Row */
+ 
     .academy-features {
       display: grid; grid-template-columns: repeat(4, 1fr);
       gap: 1px; background: var(--border);
@@ -591,7 +551,7 @@
       font-size: 13px; color: var(--text-muted); line-height: 1.5;
     }
 
-    /* Academy Pricing */
+
     .academy-pricing {
       position: relative; z-index: 1;
       display: grid; grid-template-columns: repeat(2, 1fr);
@@ -665,7 +625,7 @@
     }
     .pricing-btn.gold:hover { background: #d4b87a; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,169,110,0.3); }
 
-    /* RESULTS */
+
     #results { padding: 100px 0; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
     .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-top: 3rem; }
@@ -688,7 +648,7 @@
       font-size: 11px; font-weight: 600; letter-spacing: 0.05em; color: var(--gold);
     }
 
-    /* COMMUNITY */
+
     #community { padding: 100px 0; }
 
     .discord-card {
@@ -721,12 +681,12 @@
 
     .discord-footnote { font-size: 12px; color: var(--text-muted); margin-top: 1rem; }
 
-    /* FINAL CTA */
+
     .final-cta { padding: 120px 0; text-align: center; border-top: 1px solid var(--border); background: var(--surface); }
     .final-cta h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 56px); font-weight: 700; letter-spacing: -0.035em; margin-bottom: 1rem; line-height: 1; }
     .final-cta p { font-size: 15px; color: var(--text-muted); max-width: 360px; margin: 0 auto 2.5rem; }
 
-    /* FOOTER */
+
     footer { padding: 3rem 0; border-top: 1px solid var(--border); }
     .footer-inner { max-width: 1280px; margin: 0 auto; padding: 0 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; }
     .footer-brand { font-size: 13px; color: var(--text-muted); margin-top: 0.5rem; }
@@ -735,7 +695,7 @@
     .footer-links button { background: none; border: none; color: var(--text-muted); font-size: 13px; cursor: pointer; transition: color .2s; }
     .footer-links button:hover { color: var(--text-primary); }
 
-    /* MOBILE MENU */
+
     .mobile-menu {
       display: none; flex-direction: column; gap: 1rem;
       padding: 1.5rem 2rem 2rem;
@@ -748,11 +708,10 @@
 
     .menu-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 18px; cursor: pointer; padding: 6px; }
 
-    /* RESPONSIVE */
+
     @media (max-width: 1024px) {
       .cards-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: repeat(2, 1fr); }
-      .bw-grid { grid-template-columns: 1fr; gap: 2rem; }
       .curriculum-grid { grid-template-columns: repeat(2, 1fr); }
       .academy-features { grid-template-columns: repeat(2, 1fr); }
       .guide-grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -763,8 +722,6 @@
       .process-grid { grid-template-columns: 1fr; }
       .results-grid { grid-template-columns: 1fr; }
       .trust-stats { flex-wrap: wrap; gap: 1rem; }
-      .bw-row { grid-template-columns: 1fr; gap: 4px; }
-      .bw-row-range { text-align: left; }
       .curriculum-grid { grid-template-columns: 1fr; }
       .academy-features { grid-template-columns: 1fr; }
       .academy-pricing { grid-template-columns: 1fr; }
@@ -776,7 +733,7 @@
 </head>
 <body>
 
-<!-- NAV -->
+
 <nav id="nav">
   <div class="nav-inner">
     <div style="display:flex;align-items:center;gap:12px;cursor:pointer" onclick="scrollTo({top:0,behavior:'smooth'})">
@@ -792,7 +749,6 @@
       <button onclick="goTo('process')">Process</button>
       <button onclick="goTo('trazyee-guide')">The Guide</button>
       <button onclick="goTo('academy')">The Academy</button>
-      <button onclick="goTo('bloodwork')">Bloodwork</button>
       <button onclick="goTo('results')">Results</button>
       <button onclick="goTo('community')">Community</button>
     </div>
@@ -814,7 +770,6 @@
     <button onclick="goTo('process')">Process</button>
     <button onclick="goTo('trazyee-guide')">The Guide</button>
     <button onclick="goTo('academy')">The Academy</button>
-    <button onclick="goTo('bloodwork')">Bloodwork</button>
     <button onclick="goTo('results')">Results</button>
     <button onclick="goTo('community')">Community</button>
     <div class="mobile-menu-actions">
@@ -826,7 +781,7 @@
   </div>
 </nav>
 
-<!-- HERO -->
+
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -861,7 +816,7 @@
   </div>
 </section>
 
-<!-- TRUST BAR -->
+
 <div class="trust-bar">
   <div class="trust-bar-inner">
     <div class="trust-label">Trusted by executives, athletes & high-performers</div>
@@ -873,7 +828,7 @@
   </div>
 </div>
 
-<!-- SERVICES -->
+
 <section id="services">
   <div class="section-wrap">
     <div class="services-header">
@@ -917,7 +872,7 @@
       <div class="service-card" id="sc2">
         <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
         <div class="card-title">Facial Analysis</div>
-        <p class="card-desc">Comprehensive panel review and ongoing monitoring with actionable interventions.</p>
+        <p class="card-desc">diversified panel review and ongoing monitoring with actionable interventions.</p>
         <ul class="card-list">
           <li>Full hormone + metabolic panels</li>
           <li>Quarterly deep-dive reviews</li>
@@ -940,7 +895,7 @@
   </div>
 </section>
 
-<!-- PROCESS -->
+
 <section id="process">
   <div class="section-wrap">
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem">
@@ -978,28 +933,25 @@
   </div>
 </section>
 
-<!-- ========================== -->
-<!-- TRAZYEE GUIDE SECTION      -->
-<!-- ========================== -->
+
 <section id="trazyee-guide">
   <div class="section-wrap">
     <div class="guide-grid">
       
-      <!-- Left Content -->
+ 
       <div>
         <div class="guide-header-row">
           <div style="font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.3em;color:var(--text-muted)">§ 06 — Trazy's Course</div>
           <div style="font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.3em;color:var(--text-muted);display:none;@media(min-width:768px){display:block;}">Updated monthly · Cancel anytime</div>
         </div>
 
-        <h2 class="guide-title">
+        <h2 class="guide-title brand-font">
           <span>TRAZYEE </span><i>GUIDE</i>
         </h2>
 
         <div class="guide-actions">
           <div style="position:relative;display:inline-block;width:100%;@media(min-width:640px){width:auto;}">
-            <span class="btn-guide-sticker">OWNED</span>
-            <button class="btn-guide-primary" onclick="goTo('academy')">
+            <button class="btn-guide-primary" onclick="return false;">
               <i class="fa-solid fa-check"></i> OPEN YOUR GUIDE
               <i class="fa-solid fa-arrow-right" style="transition:transform .2s"></i>
             </button>
@@ -1018,27 +970,27 @@
         </div>
       </div>
 
-      <!-- Right Visual (Comparison Slider) -->
+ 
       <div>
         <div style="font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.3em;color:var(--text-muted);margin-bottom:12px">Plate I — Drag to compare</div>
         
         <div class="comparison-wrapper" id="comparison-slider">
-          <!-- After Image (Background) -->
+
           <img src="https://geneozone.com/assets/transformation-after-DLWbh3FQ.png" alt="After" class="comp-img">
           
-          <!-- Before Image (Overlay) -->
+   
           <div class="comp-overlay" id="comp-overlay">
             <img src="https://geneozone.com/assets/transformation-before-DDniCy95.png" alt="Before" class="comp-img">
           </div>
 
-          <!-- Slider Handle -->
+
           <div class="comp-slider-handle" id="comp-handle" style="left: 50%;">
             <div class="comp-handle-circle">
               <i class="fa-solid fa-arrows-left-right"></i>
             </div>
           </div>
 
-          <!-- Labels -->
+ 
           <div class="comp-label left">BEFORE</div>
           <div class="comp-label right">AFTER</div>
         </div>
@@ -1048,14 +1000,11 @@
   </div>
 </section>
 
-<!-- ========================== -->
-<!-- THE ACADEMY SECTION        -->
-<!-- ========================== -->
+
 <section id="academy">
   <div class="academy-bg-glow"></div>
   <div class="section-wrap">
 
-    <!-- Header -->
     <div class="academy-header">
       <div class="academy-badge">
         <i class="fa-solid fa-graduation-cap"></i>
@@ -1067,7 +1016,7 @@
       </p>
     </div>
 
-    <!-- Curriculum Grid — 6 Modules -->
+
     <div style="margin-bottom:1.5rem">
       <div class="section-label-text" style="text-align:center">Core Curriculum</div>
       <h3 class="section-subheading" style="text-align:center;margin-bottom:0.75rem">Six integrated modules.</h3>
@@ -1075,7 +1024,7 @@
     </div>
 
     <div class="curriculum-grid">
-      <!-- Module 1: Bone Biology -->
+ 
       <div class="curriculum-card">
         <div class="curriculum-card-icon blue">
           <i class="fa-solid fa-bone"></i>
@@ -1092,7 +1041,7 @@
         </ul>
       </div>
 
-      <!-- Module 2: Craniofacial Development -->
+
       <div class="curriculum-card">
         <div class="curriculum-card-icon emerald">
           <i class="fa-solid fa-head-side"></i>
@@ -1109,7 +1058,7 @@
         </ul>
       </div>
 
-      <!-- Module 3: Hormonal Architecture -->
+
       <div class="curriculum-card">
         <div class="curriculum-card-icon purple">
           <i class="fa-solid fa-dna"></i>
@@ -1126,7 +1075,7 @@
         </ul>
       </div>
 
-      <!-- Module 4: Structural Assessment -->
+
       <div class="curriculum-card">
         <div class="curriculum-card-icon rose">
           <i class="fa-solid fa-person-rays"></i>
@@ -1143,7 +1092,7 @@
         </ul>
       </div>
 
-      <!-- Module 5: Nutrition & Supplementation -->
+
       <div class="curriculum-card">
         <div class="curriculum-card-icon amber">
           <i class="fa-solid fa-flask-vial"></i>
@@ -1160,7 +1109,7 @@
         </ul>
       </div>
 
-      <!-- Module 6: Advanced Protocols -->
+
       <div class="curriculum-card">
         <div class="curriculum-card-icon cyan">
           <i class="fa-solid fa-microchip"></i>
@@ -1178,7 +1127,7 @@
       </div>
     </div>
 
-    <!-- Academy Features -->
+
     <div style="margin-bottom:1.5rem">
       <div class="section-label-text" style="text-align:center">What's included</div>
       <h3 class="section-subheading" style="text-align:center;margin-bottom:2rem">Everything you need.</h3>
@@ -1207,7 +1156,7 @@
       </div>
     </div>
 
-    <!-- Pricing -->
+
     <div style="margin-bottom:1.5rem">
       <div class="section-label-text" style="text-align:center">Enrollment</div>
       <h3 class="section-subheading" style="text-align:center;margin-bottom:0.75rem">Choose your path.</h3>
@@ -1215,7 +1164,7 @@
     </div>
 
     <div class="academy-pricing">
-      <!-- Standard -->
+
       <div class="pricing-card">
         <div class="pricing-tier">Standard</div>
         <div class="pricing-title">Academy Access</div>
@@ -1233,7 +1182,6 @@
         </button>
       </div>
 
-      <!-- Premium -->
       <div class="pricing-card featured">
         <div class="pricing-popular">Most Popular</div>
         <div class="pricing-tier">Premium</div>
@@ -1258,58 +1206,7 @@
   </div>
 </section>
 
-<!-- BLOODWORK -->
-<section id="bloodwork">
-  <div class="section-wrap">
-    <div class="bw-grid">
-      <div>
-        <div class="section-label-text">Data-driven performance</div>
-        <h2 class="section-heading" style="margin-bottom:1.25rem">Bloodwork is<br>non-negotiable.</h2>
-        <p style="font-size:15px;color:var(--text-muted);line-height:1.65;max-width:340px">We do not guess. Every protocol is built from objective data. We analyze, optimize, and re-test on a strict cadence.</p>
-        <button class="btn-ghost" onclick="joinDiscord()" style="margin-top:2rem;padding:10px 22px">
-          View full panel <i class="fa-solid fa-arrow-right" style="font-size:11px;margin-left:4px"></i>
-        </button>
-      </div>
 
-      <div class="bw-panel">
-        <div class="bw-panel-label">Standard Comprehensive Panel</div>
-        <div class="bw-row">
-          <div class="bw-row-name">Hormone Profile</div>
-          <div class="bw-row-markers">Total T, Free T, E2, DHT, SHBG, LH, FSH, Prolactin</div>
-          <div class="bw-row-range">500–1000 ng/dL · 15–25 pg/mL E2</div>
-        </div>
-        <div class="bw-row">
-          <div class="bw-row-name">Metabolic</div>
-          <div class="bw-row-markers">HbA1c, Fasting Insulin, Glucose, IGF-1</div>
-          <div class="bw-row-range">HbA1c &lt;5.5% · Insulin 2–9</div>
-        </div>
-        <div class="bw-row">
-          <div class="bw-row-name">Lipids</div>
-          <div class="bw-row-markers">Total Chol, LDL, HDL, Triglycerides, ApoB, Lp(a)</div>
-          <div class="bw-row-range">LDL &lt;100 · ApoB &lt;80</div>
-        </div>
-        <div class="bw-row">
-          <div class="bw-row-name">Liver & Kidney</div>
-          <div class="bw-row-markers">ALT, AST, GGT, Creatinine, Cystatin C, BUN</div>
-          <div class="bw-row-range">ALT/AST &lt;35 · eGFR &gt;100</div>
-        </div>
-        <div class="bw-row">
-          <div class="bw-row-name">Hematology</div>
-          <div class="bw-row-markers">CBC, Hematocrit, Hemoglobin, Platelets</div>
-          <div class="bw-row-range">HCT 42–50%</div>
-        </div>
-        <div class="bw-row">
-          <div class="bw-row-name">Inflammation</div>
-          <div class="bw-row-markers">hsCRP, Homocysteine, IL-6</div>
-          <div class="bw-row-range">hsCRP &lt;0.7 mg/L</div>
-        </div>
-        <div class="bw-footnote">Additional panels available: DUTCH, Organic Acids, Genetic SNP analysis, Thyroid antibodies, and more.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTS -->
 <section id="results">
   <div class="section-wrap">
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem">
@@ -1342,7 +1239,7 @@
   </div>
 </section>
 
-<!-- COMMUNITY -->
+
 <section id="community">
   <div class="section-wrap" style="text-align:center">
     <div class="section-label-text">Join the community</div>
@@ -1363,7 +1260,7 @@
   </div>
 </section>
 
-<!-- FINAL CTA -->
+
 <div class="final-cta">
   <div class="section-label-text">Ready to begin?</div>
   <h2>Join our private Discord.</h2>
@@ -1379,7 +1276,7 @@
   <p style="font-size:12px;color:var(--text-muted);margin-top:1.5rem">Applications and onboarding are handled exclusively inside the server</p>
 </div>
 
-<!-- FOOTER -->
+
 <footer>
   <div class="footer-inner">
     <div>
@@ -1460,9 +1357,7 @@
   window.addEventListener('resize', initLayout);
   initLayout();
 
-  /* ========================== */
-  /* COMPARISON SLIDER LOGIC    */
-  /* ========================== */
+ 
   const sliderContainer = document.getElementById('comparison-slider');
   const sliderHandle = document.getElementById('comp-handle');
   const sliderOverlay = document.getElementById('comp-overlay');
@@ -1473,14 +1368,13 @@
     const rect = sliderContainer.getBoundingClientRect();
     let position = ((x - rect.left) / rect.width) * 100;
     
-    // Clamp between 0 and 100
+   
     position = Math.max(0, Math.min(100, position));
     
     sliderHandle.style.left = `${position}%`;
     sliderOverlay.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
   }
 
-  // Mouse Events
   sliderContainer.addEventListener('mousedown', (e) => {
     isDragging = true;
     updateSlider(e.clientX);
@@ -1497,7 +1391,7 @@
     isDragging = false;
   });
 
-  // Touch Events
+
   sliderContainer.addEventListener('touchstart', (e) => {
     isDragging = true;
     updateSlider(e.touches[0].clientX);
@@ -1505,7 +1399,7 @@
 
   window.addEventListener('touchmove', (e) => {
     if (isDragging) {
-      e.preventDefault(); // Prevent scrolling while dragging
+      e.preventDefault(); 
       updateSlider(e.touches[0].clientX);
     }
   });
