@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
     *, *::before, *::after { box-sizing: border-box; }
 
@@ -19,7 +19,6 @@
       --surface: #0d0d0d;
       --surface-2: #141414;
       --surface-3: #1a1a1a;
-      --surface-4: #111111;
       --border: rgba(255,255,255,0.07);
       --border-hover: rgba(201,169,110,0.4);
       --text-primary: #f0f0f0;
@@ -46,9 +45,8 @@
     }
 
     .brand-font { font-family: 'Space Grotesk', sans-serif; }
-    .serif-display { font-family: 'Playfair Display', serif; }
 
-
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(13,13,13,0.85);
@@ -101,7 +99,7 @@
     }
     .btn-discord:hover { background: var(--discord-dark); transform: translateY(-1px); }
 
-
+    /* HERO */
     .hero {
       min-height: 100dvh;
       display: flex; align-items: center;
@@ -197,6 +195,7 @@
     .hero-pill { display: flex; align-items: center; gap: 7px; }
     .hero-pill i { color: var(--gold); font-size: 12px; }
 
+    /* TRUST BAR */
     .trust-bar {
       border-bottom: 1px solid var(--border);
       padding: 18px 0;
@@ -212,7 +211,7 @@
     .trust-stat { font-size: 13px; color: var(--text-muted); }
     .trust-stat strong { color: var(--text-primary); font-weight: 600; }
 
- 
+    /* SECTIONS */
     .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 
     .section-label-text {
@@ -234,7 +233,7 @@
       letter-spacing: -0.03em;
     }
 
-
+    /* SERVICES */
     #services { padding: 100px 0 80px; }
 
     .services-header {
@@ -285,7 +284,7 @@
     .card-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-dim); }
     .card-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-top: 7px; flex-shrink: 0; }
 
-  
+    /* PROCESS */
     #process { padding: 100px 0; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
     .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-top: 3rem; }
@@ -303,7 +302,9 @@
     .process-title { font-size: 17px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
     .process-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
-
+    /* ========================== */
+    /* TRAZYEE GUIDE SECTION      */
+    /* ========================== */
     #trazyee-guide {
       padding: 100px 0;
       border-bottom: 1px solid var(--border);
@@ -366,7 +367,7 @@
     .guide-feature { display: flex; align-items: center; gap: 6px; }
     .guide-feature i { color: var(--text-primary); font-size: 12px; }
 
-
+    /* Comparison Slider */
     .comparison-wrapper {
       position: relative; width: 100%; max-width: 450px;
       aspect-ratio: 3/4; overflow: hidden;
@@ -412,7 +413,9 @@
     .comp-label.left { left: 16px; }
     .comp-label.right { right: 16px; }
 
-  
+    /* ========================== */
+    /* THE ACADEMY SECTION        */
+    /* ========================== */
     #academy {
       padding: 120px 0 100px;
       background: var(--surface);
@@ -452,7 +455,7 @@
     }
     .academy-badge i { font-size: 10px; }
 
-
+    /* Curriculum Grid */
     .curriculum-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; background: var(--border);
@@ -522,7 +525,7 @@
     .curriculum-topics li i.cyan { color: var(--accent-cyan); }
     .curriculum-topics li i.gold { color: var(--gold); }
 
- 
+    /* Academy Features Row */
     .academy-features {
       display: grid; grid-template-columns: repeat(4, 1fr);
       gap: 1px; background: var(--border);
@@ -551,7 +554,7 @@
       font-size: 13px; color: var(--text-muted); line-height: 1.5;
     }
 
-
+    /* Academy Pricing */
     .academy-pricing {
       position: relative; z-index: 1;
       display: grid; grid-template-columns: repeat(2, 1fr);
@@ -625,7 +628,7 @@
     }
     .pricing-btn.gold:hover { background: #d4b87a; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,169,110,0.3); }
 
-
+    /* RESULTS */
     #results { padding: 100px 0; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
     .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-top: 3rem; }
@@ -648,7 +651,7 @@
       font-size: 11px; font-weight: 600; letter-spacing: 0.05em; color: var(--gold);
     }
 
-
+    /* COMMUNITY */
     #community { padding: 100px 0; }
 
     .discord-card {
@@ -681,12 +684,12 @@
 
     .discord-footnote { font-size: 12px; color: var(--text-muted); margin-top: 1rem; }
 
-
+    /* FINAL CTA */
     .final-cta { padding: 120px 0; text-align: center; border-top: 1px solid var(--border); background: var(--surface); }
     .final-cta h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 56px); font-weight: 700; letter-spacing: -0.035em; margin-bottom: 1rem; line-height: 1; }
     .final-cta p { font-size: 15px; color: var(--text-muted); max-width: 360px; margin: 0 auto 2.5rem; }
 
-
+    /* FOOTER */
     footer { padding: 3rem 0; border-top: 1px solid var(--border); }
     .footer-inner { max-width: 1280px; margin: 0 auto; padding: 0 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; }
     .footer-brand { font-size: 13px; color: var(--text-muted); margin-top: 0.5rem; }
@@ -695,7 +698,7 @@
     .footer-links button { background: none; border: none; color: var(--text-muted); font-size: 13px; cursor: pointer; transition: color .2s; }
     .footer-links button:hover { color: var(--text-primary); }
 
-
+    /* MOBILE MENU */
     .mobile-menu {
       display: none; flex-direction: column; gap: 1rem;
       padding: 1.5rem 2rem 2rem;
@@ -708,7 +711,7 @@
 
     .menu-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 18px; cursor: pointer; padding: 6px; }
 
-
+    /* RESPONSIVE */
     @media (max-width: 1024px) {
       .cards-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: repeat(2, 1fr); }
@@ -733,7 +736,7 @@
 </head>
 <body>
 
-
+<!-- NAV -->
 <nav id="nav">
   <div class="nav-inner">
     <div style="display:flex;align-items:center;gap:12px;cursor:pointer" onclick="scrollTo({top:0,behavior:'smooth'})">
@@ -781,7 +784,7 @@
   </div>
 </nav>
 
-
+<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -816,7 +819,7 @@
   </div>
 </section>
 
-
+<!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-bar-inner">
     <div class="trust-label">Trusted by executives, athletes & high-performers</div>
@@ -828,7 +831,7 @@
   </div>
 </div>
 
-
+<!-- SERVICES -->
 <section id="services">
   <div class="section-wrap">
     <div class="services-header">
@@ -872,7 +875,7 @@
       <div class="service-card" id="sc2">
         <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
         <div class="card-title">Facial Analysis</div>
-        <p class="card-desc">diversified panel review and ongoing monitoring with actionable interventions.</p>
+        <p class="card-desc">Comprehensive panel review and ongoing monitoring with actionable interventions.</p>
         <ul class="card-list">
           <li>Full hormone + metabolic panels</li>
           <li>Quarterly deep-dive reviews</li>
@@ -895,7 +898,7 @@
   </div>
 </section>
 
-
+<!-- PROCESS -->
 <section id="process">
   <div class="section-wrap">
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem">
@@ -933,12 +936,14 @@
   </div>
 </section>
 
-
+<!-- ========================== -->
+<!-- TRAZYEE GUIDE SECTION      -->
+<!-- ========================== -->
 <section id="trazyee-guide">
   <div class="section-wrap">
     <div class="guide-grid">
       
- 
+      <!-- Left Content -->
       <div>
         <div class="guide-header-row">
           <div style="font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.3em;color:var(--text-muted)">§ 06 — Trazy's Course</div>
@@ -970,27 +975,27 @@
         </div>
       </div>
 
- 
+      <!-- Right Visual (Comparison Slider) -->
       <div>
         <div style="font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.3em;color:var(--text-muted);margin-bottom:12px">Plate I — Drag to compare</div>
         
         <div class="comparison-wrapper" id="comparison-slider">
-
+          <!-- After Image (Background) -->
           <img src="https://geneozone.com/assets/transformation-after-DLWbh3FQ.png" alt="After" class="comp-img">
           
-   
+          <!-- Before Image (Overlay) -->
           <div class="comp-overlay" id="comp-overlay">
             <img src="https://geneozone.com/assets/transformation-before-DDniCy95.png" alt="Before" class="comp-img">
           </div>
 
-
+          <!-- Slider Handle -->
           <div class="comp-slider-handle" id="comp-handle" style="left: 50%;">
             <div class="comp-handle-circle">
               <i class="fa-solid fa-arrows-left-right"></i>
             </div>
           </div>
 
- 
+          <!-- Labels -->
           <div class="comp-label left">BEFORE</div>
           <div class="comp-label right">AFTER</div>
         </div>
@@ -1000,11 +1005,14 @@
   </div>
 </section>
 
-
+<!-- ========================== -->
+<!-- THE ACADEMY SECTION        -->
+<!-- ========================== -->
 <section id="academy">
   <div class="academy-bg-glow"></div>
   <div class="section-wrap">
 
+    <!-- Header -->
     <div class="academy-header">
       <div class="academy-badge">
         <i class="fa-solid fa-graduation-cap"></i>
@@ -1016,7 +1024,7 @@
       </p>
     </div>
 
-
+    <!-- Curriculum Grid — 6 Modules -->
     <div style="margin-bottom:1.5rem">
       <div class="section-label-text" style="text-align:center">Core Curriculum</div>
       <h3 class="section-subheading" style="text-align:center;margin-bottom:0.75rem">Six integrated modules.</h3>
@@ -1024,7 +1032,7 @@
     </div>
 
     <div class="curriculum-grid">
- 
+      <!-- Module 1: Bone Biology -->
       <div class="curriculum-card">
         <div class="curriculum-card-icon blue">
           <i class="fa-solid fa-bone"></i>
@@ -1041,7 +1049,7 @@
         </ul>
       </div>
 
-
+      <!-- Module 2: Craniofacial Development -->
       <div class="curriculum-card">
         <div class="curriculum-card-icon emerald">
           <i class="fa-solid fa-head-side"></i>
@@ -1058,7 +1066,7 @@
         </ul>
       </div>
 
-
+      <!-- Module 3: Hormonal Architecture -->
       <div class="curriculum-card">
         <div class="curriculum-card-icon purple">
           <i class="fa-solid fa-dna"></i>
@@ -1071,11 +1079,10 @@
           <li><i class="fa-solid fa-chevron-right purple"></i> Testosterone & DHT in bone density</li>
           <li><i class="fa-solid fa-chevron-right purple"></i> Estrogen's role in epiphyseal fusion</li>
           <li><i class="fa-solid fa-chevron-right purple"></i> Thyroid & parathyroid bone effects</li>
-          <li><i class="fa-solid fa-chevron-right purple"></i> Bloodwork panels for skeletal optimization</li>
         </ul>
       </div>
 
-
+      <!-- Module 4: Structural Assessment -->
       <div class="curriculum-card">
         <div class="curriculum-card-icon rose">
           <i class="fa-solid fa-person-rays"></i>
@@ -1092,7 +1099,7 @@
         </ul>
       </div>
 
-
+      <!-- Module 5: Nutrition & Supplementation -->
       <div class="curriculum-card">
         <div class="curriculum-card-icon amber">
           <i class="fa-solid fa-flask-vial"></i>
@@ -1109,7 +1116,7 @@
         </ul>
       </div>
 
-
+      <!-- Module 6: Advanced Protocols -->
       <div class="curriculum-card">
         <div class="curriculum-card-icon cyan">
           <i class="fa-solid fa-microchip"></i>
@@ -1127,7 +1134,7 @@
       </div>
     </div>
 
-
+    <!-- Academy Features -->
     <div style="margin-bottom:1.5rem">
       <div class="section-label-text" style="text-align:center">What's included</div>
       <h3 class="section-subheading" style="text-align:center;margin-bottom:2rem">Everything you need.</h3>
@@ -1156,7 +1163,7 @@
       </div>
     </div>
 
-
+    <!-- Pricing -->
     <div style="margin-bottom:1.5rem">
       <div class="section-label-text" style="text-align:center">Enrollment</div>
       <h3 class="section-subheading" style="text-align:center;margin-bottom:0.75rem">Choose your path.</h3>
@@ -1164,7 +1171,7 @@
     </div>
 
     <div class="academy-pricing">
-
+      <!-- Standard -->
       <div class="pricing-card">
         <div class="pricing-tier">Standard</div>
         <div class="pricing-title">Academy Access</div>
@@ -1182,6 +1189,7 @@
         </button>
       </div>
 
+      <!-- Premium -->
       <div class="pricing-card featured">
         <div class="pricing-popular">Most Popular</div>
         <div class="pricing-tier">Premium</div>
@@ -1193,7 +1201,6 @@
           <li><i class="fa-solid fa-check"></i> 1:1 coaching with Trazy</li>
           <li><i class="fa-solid fa-check"></i> Personalized protocol design</li>
           <li><i class="fa-solid fa-check"></i> Weekly check-ins & adjustments</li>
-          <li><i class="fa-solid fa-check"></i> Bloodwork analysis & interpretation</li>
           <li><i class="fa-solid fa-check"></i> Priority Q&A access</li>
           <li><i class="fa-solid fa-check"></i> 24/7 direct messaging</li>
         </ul>
@@ -1206,7 +1213,7 @@
   </div>
 </section>
 
-
+<!-- RESULTS -->
 <section id="results">
   <div class="section-wrap">
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem">
@@ -1218,28 +1225,28 @@
     </div>
     <div class="results-grid">
       <div class="testimonial-card">
-        <p class="testimonial-quote">"Trazy's Academy completely transformed how I approach my body. Bloodwork analysis revealed issues I had no idea existed. My energy, strength, and recovery are at levels I never thought possible at 41."</p>
+        <p class="testimonial-quote">"Trazy's Academy completely transformed how I approach my body. My energy, strength, and recovery are at levels I never thought possible at 41."</p>
         <div class="testimonial-author">Marcus Chen</div>
         <div class="testimonial-role">Entrepreneur, 41</div>
         <div class="testimonial-badge">+38 lbs lean mass in 14 months</div>
       </div>
       <div class="testimonial-card">
-        <p class="testimonial-quote">"The cycle design work is unmatched. They built a protocol around my specific genetic profile and blood markers. Zero sides, incredible gains, and the most detailed support I've ever received."</p>
+        <p class="testimonial-quote">"The cycle design work is unmatched. They built a protocol around my specific genetic profile. Zero sides, incredible gains, and the most detailed support I've ever received."</p>
         <div class="testimonial-author">David Patel</div>
         <div class="testimonial-role">Executive, 36</div>
-        <div class="testimonial-badge">PRs across all lifts, perfect bloods</div>
+        <div class="testimonial-badge">PRs across all lifts</div>
       </div>
       <div class="testimonial-card">
-        <p class="testimonial-quote">"I came in with years of failed attempts and poor blood markers. Within 6 months I had optimal hormones, visible structural improvements, and a sustainable framework for life."</p>
+        <p class="testimonial-quote">"I came in with years of failed attempts. Within 6 months I had visible structural improvements and a sustainable framework for life."</p>
         <div class="testimonial-author">James Morrison</div>
         <div class="testimonial-role">Investor, 44</div>
-        <div class="testimonial-badge">Full hormonal optimization</div>
+        <div class="testimonial-badge">Full structural optimization</div>
       </div>
     </div>
   </div>
 </section>
 
-
+<!-- COMMUNITY -->
 <section id="community">
   <div class="section-wrap" style="text-align:center">
     <div class="section-label-text">Join the community</div>
@@ -1251,7 +1258,7 @@
         <i class="fa-brands fa-discord"></i>
       </div>
       <h3>Trazy's Academy Private Discord</h3>
-      <p>Direct access to your coach, weekly check-ins, bloodwork reviews, and the full client community.</p>
+      <p>Direct access to your coach, weekly check-ins, and the full client community.</p>
       <button class="btn-discord-lg" onclick="joinDiscord()">
         <i class="fa-brands fa-discord"></i> Join the Discord
       </button>
@@ -1260,7 +1267,7 @@
   </div>
 </section>
 
-
+<!-- FINAL CTA -->
 <div class="final-cta">
   <div class="section-label-text">Ready to begin?</div>
   <h2>Join our private Discord.</h2>
@@ -1276,7 +1283,7 @@
   <p style="font-size:12px;color:var(--text-muted);margin-top:1.5rem">Applications and onboarding are handled exclusively inside the server</p>
 </div>
 
-
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
@@ -1357,7 +1364,9 @@
   window.addEventListener('resize', initLayout);
   initLayout();
 
- 
+  /* ========================== */
+  /* COMPARISON SLIDER LOGIC    */
+  /* ========================== */
   const sliderContainer = document.getElementById('comparison-slider');
   const sliderHandle = document.getElementById('comp-handle');
   const sliderOverlay = document.getElementById('comp-overlay');
@@ -1368,13 +1377,14 @@
     const rect = sliderContainer.getBoundingClientRect();
     let position = ((x - rect.left) / rect.width) * 100;
     
-   
+    // Clamp between 0 and 100
     position = Math.max(0, Math.min(100, position));
     
     sliderHandle.style.left = `${position}%`;
     sliderOverlay.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
   }
 
+  // Mouse Events
   sliderContainer.addEventListener('mousedown', (e) => {
     isDragging = true;
     updateSlider(e.clientX);
@@ -1391,7 +1401,7 @@
     isDragging = false;
   });
 
-
+  // Touch Events
   sliderContainer.addEventListener('touchstart', (e) => {
     isDragging = true;
     updateSlider(e.touches[0].clientX);
@@ -1399,7 +1409,7 @@
 
   window.addEventListener('touchmove', (e) => {
     if (isDragging) {
-      e.preventDefault(); 
+      e.preventDefault(); // Prevent scrolling while dragging
       updateSlider(e.touches[0].clientX);
     }
   });
